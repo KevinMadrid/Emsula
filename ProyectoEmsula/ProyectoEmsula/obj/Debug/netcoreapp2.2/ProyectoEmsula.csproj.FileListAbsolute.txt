@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.AssemblyInfo.cs
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.RazorAssemblyInfo.cache
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\ProyectoEmsula.deps.json
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\ProyectoEmsula.runtimeconfig.json
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\ProyectoEmsula.runtimeconfig.dev.json
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\ProyectoEmsula.dll
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\bin\Debug\netcoreapp2.2\ProyectoEmsula.pdb
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.dll
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.pdb
+C:\Users\user\source\repos\ProyectoEmsula\ProyectoEmsula\obj\Debug\netcoreapp2.2\ProyectoEmsula.genruntimeconfig.cache
