@@ -12165,11 +12165,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
       "projectName": "ProyectoEmsula",
-      "projectPath": "C:\\Users\\user\\source\\repos\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\ProyectoEmsula\\ProyectoEmsula\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

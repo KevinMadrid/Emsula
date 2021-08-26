@@ -8,18 +8,55 @@ namespace ProyectoEmsula.Models
     public class Ajuste
     {
 
-        public Ajuste(Negocio negocio, Cliente cliente, Ubicacion ubicacion, DatoEmsula datoEmsula)
+        public Ajuste(Canal canal, CaracteristicaZona caracteristicaZona, Ciudad ciudad, Compania compania,
+                      Departamento departamento, DiaVisita diaVisita, FormaAtencion formaAtencion,
+                      PuntoPos puntoPos, PuntoRejas puntoRejas, Ramo ramo, Segmentacion segmentacion, Segmento segmento,
+                      Tamano tamano, Territorio territorio, TipoCliente tipoCliente, TipoEmpresa tipoEmpresa, TipoReferencia tipoReferencia,
+                      TipoZona tipoZona, ZonaEntrega zonaEntrega)
         {
-            Cliente = cliente;
-            Ubicacion = ubicacion;
-            DatoEmsula= datoEmsula;
-            Negocio = negocio;
+          
+            Canal = canal;
+            CaracteristicaZona = caracteristicaZona;
+            Ciudad= ciudad;
+            Compania= compania;
+            Departamento = departamento;
+            DiaVisita = diaVisita;
+            FormaAtencion = formaAtencion;
+            PuntoPos = puntoPos;
+            PuntoRejas = puntoRejas;
+            Ramo = ramo;
+            Segmentacion = segmentacion;
+            Segmento = segmento;
+            Tamano = tamano;
+            Territorio = territorio;
+            TipoCliente = tipoCliente;
+            TipoEmpresa = tipoEmpresa;
+            TipoReferencia = tipoReferencia;
+            TipoZona = tipoZona;
+            ZonaEntrega = zonaEntrega;
+          
         }
      
     
-        public Cliente Cliente{ get; set; }
-        public Ubicacion Ubicacion{ get; set; }
-        public DatoEmsula DatoEmsula{ get; set; }
-        public Negocio Negocio{ get; set; }
+        public Canal Canal{ get; set; }
+        public CaracteristicaZona CaracteristicaZona{ get; set; }
+        public Ciudad Ciudad{ get; set; }
+        public Compania Compania{ get; set; }
+        public Departamento Departamento{ get; set; }
+        public DiaVisita DiaVisita{ get; set; }
+        public FormaAtencion FormaAtencion{ get; set; }
+        public PuntoPos PuntoPos{ get; set; }
+        public PuntoRejas PuntoRejas{ get; set; }
+        public Ramo Ramo{ get; set; }
+        public Segmentacion Segmentacion{ get; set; }
+        public Segmento Segmento{ get; set; }
+        public Tamano Tamano{ get; set; }
+        public Territorio Territorio{ get; set; }
+        public TipoCliente TipoCliente{ get; set; }
+        public TipoEmpresa TipoEmpresa{ get; set; }
+        public TipoReferencia TipoReferencia{ get; set; }
+        public TipoZona TipoZona{ get; set; }
+        public ZonaEntrega ZonaEntrega{ get; set; }
+
     }
 }

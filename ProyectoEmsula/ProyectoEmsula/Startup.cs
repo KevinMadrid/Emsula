@@ -31,18 +31,48 @@ namespace ProyectoEmsula
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<EmsulaDataContext>();
-            services.AddScoped<ClienteAppService>();
-            services.AddScoped<ClienteDomainService>();
-            services.AddScoped<NegocioAppService>();
-            services.AddScoped<NegocioDomainService>();
+            services.AddScoped<CanalAppService>();
+            services.AddScoped<CanalDomainService>();
+            services.AddScoped<CaracteristicaZonaAppService>();
+            services.AddScoped<CaracteristicaZonaDomainService>();
+            services.AddScoped<CiudadAppService>();
+            services.AddScoped<CiudadDomainService>();
+            services.AddScoped<CompaniaAppService>();
+            services.AddScoped<CompaniaDomainService>();
+            services.AddScoped<DepartamentoAppService>();
+            services.AddScoped<DepartamentoDomainService>();
+            services.AddScoped<DiaVisitaAppService>();
+            services.AddScoped<DiaVisitaDomainService>();
+            services.AddScoped<FormaAtencionAppService>();
+            services.AddScoped<FormaAtencionDomainService>();
+            services.AddScoped<PuntoPosAppService>();
+            services.AddScoped<PuntoPosDomainService>();
+            services.AddScoped<PuntoRejasAppService>();
+            services.AddScoped<PuntoRejasDomainService>();
+            services.AddScoped<RamoAppService>();
+            services.AddScoped<RamoDomainService>();
+            services.AddScoped<SegmentacionAppService>();
+            services.AddScoped<SegmentacionDomainService>();
+            services.AddScoped<SegmentoAppService>();
+            services.AddScoped<SegmentoDomainService>();
+            services.AddScoped<TamanoAppService>();
+            services.AddScoped<TamanoDomainService>();
+            services.AddScoped<TerritorioAppService>();
+            services.AddScoped<TerritorioDomainService>();
+            services.AddScoped<TipoClienteAppService>();
+            services.AddScoped<TipoClienteDomainService>();
+            services.AddScoped<TipoEmpresaAppService>();
+            services.AddScoped<TipoEmpresaDomainService>();
+            services.AddScoped<TipoReferenciaAppService>();
+            services.AddScoped<TipoReferenciaDomainService>();
+            services.AddScoped<TipoZonaAppService>();
+            services.AddScoped<TipoZonaDomainService>();
             services.AddScoped<UsuarioAppService>();
             services.AddScoped<UsuarioDomainService>();
-            services.AddScoped<DatoEmsulaAppService>();
-            services.AddScoped<DatoEmsulaDomainService>();
-            services.AddScoped<UbicacionAppService>();
-            services.AddScoped<UbicacionDomainService>();
-            services.AddScoped<DatoAppService>();
-            services.AddScoped<DatoDomainService>();
+            services.AddScoped<ZonaEntregaAppService>();
+            services.AddScoped<ZonaEntregaDomainService>();
+            services.AddScoped<GestionAppService>();
+            services.AddScoped<GestionDomainService>();
 
             services.AddMvc()
                  .AddJsonOptions(Options => Options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
