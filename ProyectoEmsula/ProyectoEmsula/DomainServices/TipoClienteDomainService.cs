@@ -9,7 +9,7 @@ namespace ProyectoEmsula.DomainServices
         {
             if (tipoCliente == null)
             {
-                return "No se Encontro el TipoCliente";
+                return "No se Encontro el Tipo de Cliente";
             }
 
             return null;
@@ -23,7 +23,7 @@ namespace ProyectoEmsula.DomainServices
         {
             if (tipoCliente == null)
             {
-                return "No se Encontro el TipoCliente";
+                return "No se Encontro el Tipo de Cliente";
             }
          
             return null;
@@ -32,7 +32,7 @@ namespace ProyectoEmsula.DomainServices
         {
             if (tipoCliente == null)
             {
-                return "No se Encontro el TipoCliente";
+                return "No se Encontro el Tipo de Cliente";
             }
 
             return null;

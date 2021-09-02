@@ -12,10 +12,11 @@ namespace ProyectoEmsula.Models
                       Departamento departamento, DiaVisita diaVisita, FormaAtencion formaAtencion,
                       PuntoPos puntoPos, PuntoRejas puntoRejas, Ramo ramo, Segmentacion segmentacion, Segmento segmento,
                       Tamano tamano, Territorio territorio, TipoCliente tipoCliente, TipoEmpresa tipoEmpresa, TipoReferencia tipoReferencia,
-                      TipoZona tipoZona, ZonaEntrega zonaEntrega)
+                      TipoZona tipoZona, ZonaEntrega zonaEntrega,Gestion gestion)
         {
           
             Canal = canal;
+            Gestion = gestion;
             CaracteristicaZona = caracteristicaZona;
             Ciudad= ciudad;
             Compania= compania;
@@ -39,6 +40,8 @@ namespace ProyectoEmsula.Models
      
     
         public Canal Canal{ get; set; }
+        public Gestion Gestion{ get; set; }
+
         public CaracteristicaZona CaracteristicaZona{ get; set; }
         public Ciudad Ciudad{ get; set; }
         public Compania Compania{ get; set; }

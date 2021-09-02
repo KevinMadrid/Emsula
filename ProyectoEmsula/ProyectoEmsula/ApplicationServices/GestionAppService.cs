@@ -102,7 +102,7 @@ namespace ProyectoEmsula.ApplicationService
                                    departamento, diaVisita, formaAtencion,
                                    puntoPos, puntoRejas, ramo, segmentacion, segmento,
                                    tamano, territorio, tipoCliente,  tipoEmpresa, tipoReferencia,
-                                   tipoZona, zonaEntrega);
+                                   tipoZona, zonaEntrega,gestion);
             return ajuste;
         }
 

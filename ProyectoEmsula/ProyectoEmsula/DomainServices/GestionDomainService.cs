@@ -12,7 +12,7 @@ namespace ProyectoEmsula.DomainService
         {
             if (gestion == null)
             {
-                return "No se Encuentra el Gestion";
+                return "No se Encuentra la Gestion";
             }
             return null;
         }
@@ -38,7 +38,7 @@ namespace ProyectoEmsula.DomainService
 
             if (ajuste.Departamento == null)
             {
-                return "No se encontro el Departarnto";
+                return "No se encontro el Departamento";
             }
             if (ajuste.DiaVisita == null)
             {
@@ -90,7 +90,7 @@ namespace ProyectoEmsula.DomainService
             }
             if (ajuste.TipoReferencia == null)
             {
-                return "El tamaño de Referencia no existe";
+                return "El Tipo de Referencia no existe";
             }
             if (ajuste.TipoZona == null)
             {
@@ -105,6 +105,10 @@ namespace ProyectoEmsula.DomainService
          }
         public string PutGestionDomainService(int id,Ajuste ajuste)
         {
+            if (ajuste.Gestion== null)
+            {
+                return "No se Encontro la Gestion";
+            }
             if (ajuste.Canal == null)
             {
                 return "No se encontro el Canal";
@@ -125,7 +129,7 @@ namespace ProyectoEmsula.DomainService
 
             if (ajuste.Departamento == null)
             {
-                return "No se encontro el Departarnto";
+                return "No se encontro el Departamento";
             }
             if (ajuste.DiaVisita == null)
             {
@@ -177,7 +181,7 @@ namespace ProyectoEmsula.DomainService
             }
             if (ajuste.TipoReferencia == null)
             {
-                return "El tamaño de Referencia no existe";
+                return "El Tipo de Referencia no existe";
             }
             if (ajuste.TipoZona == null)
             {
@@ -194,7 +198,7 @@ namespace ProyectoEmsula.DomainService
         {
             if (gestion == null)
             {
-                return "No se encuentro el Gestion";
+                return "No se encuentro la Gestion";
             }
             return null;
 
