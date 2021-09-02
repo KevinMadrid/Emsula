@@ -31,10 +31,6 @@ namespace ProyectoEmsula.DataContext
         {
             optionBuilder.UseSqlServer(@"Server=KEVIN-PC;DataBase=Emsula;Trusted_Connection=True");
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new UsuarioMap());
-            base.OnModelCreating(modelBuilder);
-        }
+  
     }
 }

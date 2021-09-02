@@ -52,11 +52,7 @@ namespace ProyectoEmsula.Controllers
             bool noHayErroresEnLasValidaciones = respuestaGestionAppService == null;
             if (noHayErroresEnLasValidaciones)
             {
-                return await _baseDatos.Gestions.Include(q => q.Canal).Include(q => q.CaracteristicaZona).Include(q => q.Ciudad).Include(q => q.Compania)
-                                                    .Include(q => q.Departamento).Include(q => q.DiaVisita).Include(q => q.FormaAtencion).Include(q => q.PuntoPos)
-                                                    .Include(q => q.PuntoRejas).Include(q => q.Ramo).Include(q => q.Segmentacion).Include(q => q.Segmento)
-                                                    .Include(q => q.Tamano).Include(q => q.Territorio).Include(q => q.TipoCliente).Include(q => q.TipoEmpresa)
-                                                    .Include(q => q.TipoReferencia).Include(q => q.TipoZona).Include(q => q.ZonaEntrega).FirstOrDefaultAsync(q => q.Id == id);
+                return await _baseDatos.Gestions.FirstOrDefaultAsync(q => q.Id == id);
             }
             return BadRequest(respuestaGestionAppService);
 
@@ -70,7 +66,7 @@ namespace ProyectoEmsula.Controllers
             bool noHayErroresEnLasValidaciones = respuestaGestionAppService == null;
             if (noHayErroresEnLasValidaciones)
             {
-                return CreatedAtAction(nameof(GetGestions), new { id = gestion.Id }, gestion);
+                return CreatedAtAction(nameof(GetGestion), new { id = gestion.Id }, gestion);
             }
             return BadRequest(respuestaGestionAppService);
         }
