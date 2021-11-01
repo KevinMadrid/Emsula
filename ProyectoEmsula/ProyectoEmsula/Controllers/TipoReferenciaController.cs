@@ -27,9 +27,9 @@ namespace ProyectoEmsula.Controllers
 
             if (_baseDatos.TipoReferencias.Count() == 0)
             {
-                _baseDatos.TipoReferencias.Add(new TipoReferencia { Tiporeferencia = "Exportacion" });
-                _baseDatos.TipoReferencias.Add(new TipoReferencia { Tiporeferencia = "Mixto" });
-                _baseDatos.TipoReferencias.Add(new TipoReferencia { Tiporeferencia = "Preferencial" });
+                _baseDatos.TipoReferencias.Add(new TipoReferencia { TipoReferenciaCliente = "Exportacion" });
+                _baseDatos.TipoReferencias.Add(new TipoReferencia { TipoReferenciaCliente = "Mixto" });
+                _baseDatos.TipoReferencias.Add(new TipoReferencia { TipoReferenciaCliente = "Preferencial" });
          
 
 

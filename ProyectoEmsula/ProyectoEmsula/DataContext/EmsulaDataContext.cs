@@ -10,9 +10,10 @@ namespace ProyectoEmsula.DataContext
         public DbSet<Ciudad> Ciudads{ get; set; }
         public DbSet<Compania> Companias{ get; set; }
         public DbSet<Departamento> Departamentos{ get; set; }
-        public DbSet<DiaVisita> DiaVisitas{ get; set; }
         public DbSet<FormaAtencion> FormaAtencions{ get; set; }
         public DbSet<Gestion> Gestions{ get; set; }
+        public DbSet<Apertura> Aperturas{ get; set; }
+
         public DbSet<PuntoPos> PuntoPos{ get; set; }
         public DbSet<PuntoRejas> PuntoRejas{ get; set; }
         public DbSet<Ramo> Ramos{ get; set; }

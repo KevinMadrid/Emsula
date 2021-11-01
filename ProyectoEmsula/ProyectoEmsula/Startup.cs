@@ -41,8 +41,6 @@ namespace ProyectoEmsula
             services.AddScoped<CompaniaDomainService>();
             services.AddScoped<DepartamentoAppService>();
             services.AddScoped<DepartamentoDomainService>();
-            services.AddScoped<DiaVisitaAppService>();
-            services.AddScoped<DiaVisitaDomainService>();
             services.AddScoped<FormaAtencionAppService>();
             services.AddScoped<FormaAtencionDomainService>();
             services.AddScoped<PuntoPosAppService>();
@@ -73,6 +71,8 @@ namespace ProyectoEmsula
             services.AddScoped<ZonaEntregaDomainService>();
             services.AddScoped<GestionAppService>();
             services.AddScoped<GestionDomainService>();
+            services.AddScoped<AperturaAppService>();
+            services.AddScoped<AperturaDomainService>();
 
             services.AddMvc()
                  .AddJsonOptions(Options => Options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);

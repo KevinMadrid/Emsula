@@ -22,7 +22,7 @@ namespace ProyectoEmsula.ApplicationServices
         }
 
 
-        public async Task<string> TieneAccesoUsuario(string usuarioId, string contrasenia)
+        public async Task<Usuario> TieneAccesoUsuario(string usuarioId, string contrasenia)
         {
             var usuario = await _baseDatos.Usuarios.FirstOrDefaultAsync(q => q.UsuarioId == usuarioId 
             && q.Contrasenia == contrasenia);
@@ -30,13 +30,13 @@ namespace ProyectoEmsula.ApplicationServices
 
            var respuestaDomain = _usuarioDomainServices.TieneAcceso(usuario);
 
-            bool vieneConErrorEnElDomain = respuestaDomain != null;
+            bool vieneConErrorEnElDomain = respuestaDomain != "sucess";
             if (vieneConErrorEnElDomain)
             {
-                return respuestaDomain;
+                return null;
             }
                        
-            return "sucess";
+            return usuario;
 
         }
 

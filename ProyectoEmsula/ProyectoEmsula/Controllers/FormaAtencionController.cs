@@ -27,20 +27,9 @@ namespace ProyectoEmsula.Controllers
 
             if (_baseDatos.FormaAtencions.Count() == 0)
             {
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Afiliado" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente= "Auto El Progreso" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente= "Auto Villanueva" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente= "Autoventa" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente= "Autoventa 2X"});
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente= "AV La20 Temp" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "CDI" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Categoria 1" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Categoria 2" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Categoria 3" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "CDI Terminal" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Clientes Especiales" });
+                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "CDI" });                         _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Clientes Especiales" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Distribuidores" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "K Diprova" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Mercados Especiales" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Plantel" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Preventa" });
@@ -48,7 +37,6 @@ namespace ProyectoEmsula.Controllers
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Preventa 3X" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "SM La Colonia" });
                 _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Super La20" });
-                _baseDatos.FormaAtencions.Add(new FormaAtencion { FormaAtencionCliente = "Wallmart" });
                 _baseDatos.SaveChanges();
             }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj": {}
+    "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj": {
+    "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
         "projectName": "ProyectoEmsula",
-        "projectPath": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
+        "projectPath": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\obj\\",
+        "outputPath": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj": {
+    "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj",
         "projectName": "UnitTestGestion",
-        "projectPath": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj",
+        "projectPath": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\UnitTestGestion\\UnitTestGestion.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\UnitTestGestion\\obj\\",
+        "outputPath": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\UnitTestGestion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -116,8 +116,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj"
+              "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj": {
+                "projectPath": "C:\\Users\\user\\Downloads\\Emsula\\ProyectoEmsula\\ProyectoEmsula\\ProyectoEmsula.csproj"
               }
             }
           }

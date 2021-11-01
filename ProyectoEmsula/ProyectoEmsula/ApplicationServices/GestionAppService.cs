@@ -24,7 +24,7 @@ namespace ProyectoEmsula.ApplicationService
         public async Task<String> GetGestionApplicationService(int id)
         {
             var gestion = await _baseDatos.Gestions.Include(q => q.Canal).Include(q => q.CaracteristicaZona).Include(q => q.Ciudad).Include(q => q.Compania)
-                                                    .Include(q => q.Departamento).Include(q => q.DiaVisita).Include(q => q.FormaAtencion).Include(q => q.PuntoPos)
+                                                    .Include(q => q.Departamento).Include(q => q.FormaAtencion).Include(q => q.PuntoPos)
                                                     .Include(q => q.PuntoRejas).Include(q => q.Ramo).Include(q => q.Segmentacion).Include(q => q.Segmento)
                                                     .Include(q => q.Tamano).Include(q => q.Territorio).Include(q => q.TipoCliente).Include(q => q.TipoEmpresa)
                                                     .Include(q => q.TipoReferencia).Include(q => q.TipoZona).Include(q => q.ZonaEntrega).FirstOrDefaultAsync(q => q.Id == id);
@@ -69,7 +69,6 @@ namespace ProyectoEmsula.ApplicationService
 
             Departamento departamento = await _baseDatos.Departamentos.FirstOrDefaultAsync(q => q.Id == gestion.departamentoid);
 
-            DiaVisita diaVisita= await _baseDatos.DiaVisitas.FirstOrDefaultAsync(q => q.Id == gestion.diaVisitaid);
 
             FormaAtencion formaAtencion= await _baseDatos.FormaAtencions.FirstOrDefaultAsync(q => q.Id == gestion.formaAtencionid);
 
@@ -97,9 +96,10 @@ namespace ProyectoEmsula.ApplicationService
 
             ZonaEntrega zonaEntrega= await _baseDatos.ZonaEntregas.FirstOrDefaultAsync(q => q.Id == gestion.zonaEntregaid);
 
+            Apertura apertura= await _baseDatos.Aperturas.FirstOrDefaultAsync(q => q.Id == gestion.zonaEntregaid);
 
-            var ajuste= new Ajuste(canal, caracteristicaZona, ciudad, compania,
-                                   departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania,
+                                   departamento, formaAtencion,
                                    puntoPos, puntoRejas, ramo, segmentacion, segmento,
                                    tamano, territorio, tipoCliente,  tipoEmpresa, tipoReferencia,
                                    tipoZona, zonaEntrega,gestion);

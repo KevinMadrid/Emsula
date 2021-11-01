@@ -10,13 +10,12 @@ namespace ProyectoEmsula.DomainServices
     {
         public string TieneAcceso(Usuario usuario)
         {
-            var usuarioExiste = usuario == null;
-            if (usuarioExiste)
+            if (usuario == null)
             {
                 return "El usuario o la contraseña no son válidos";
             }
 
-            if (usuario.EstaActivo == false)
+            if (!usuario.EstaActivo)
             {
                 return "El usuario no está activo";
             }

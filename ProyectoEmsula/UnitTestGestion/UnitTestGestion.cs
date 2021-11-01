@@ -32,7 +32,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -49,7 +48,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             canal = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania,departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania,departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona,zonaEntrega,gestion);
@@ -73,7 +72,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -90,7 +88,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             caracteristicaZona = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -113,7 +111,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -130,7 +127,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             ciudad = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -154,7 +151,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -171,7 +167,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             compania = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -194,7 +190,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -211,7 +206,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             departamento = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -225,47 +220,6 @@ namespace UnitTestMatricula
             Assert.AreEqual("No se encontro el Departamento", resultado);
         }
 
-
-        [TestMethod]
-        public void PruebaParaValidarQueSeEncuentraUnaDiaVisitaPost()
-        {
-            // Arrange
-            var canal = new Canal();
-            var caracteristicaZona = new CaracteristicaZona();
-            var ciudad = new Ciudad();
-            var compania = new Compania();
-            var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
-            var formaAtencion = new FormaAtencion();
-            var puntoPos = new PuntoPos();
-            var puntoRejas = new PuntoRejas();
-            var ramo = new Ramo();
-            var segmentacion = new Segmentacion();
-            var segmento = new Segmento();
-            var tamano = new Tamano();
-            var territorio = new Territorio();
-            var tipoCliente = new TipoCliente();
-            var tipoEmpresa = new TipoEmpresa();
-            var tipoReferencia = new TipoReferencia();
-            var tipoZona = new TipoZona();
-            var zonaEntrega = new ZonaEntrega();
-            var gestion = new Gestion();
-            var id = new int();
-            diaVisita = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
-                      puntoPos, puntoRejas, ramo, segmentacion, segmento,
-                      tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
-                      tipoZona, zonaEntrega,gestion);
-
-            // Act
-
-            var gestionDomainService = new GestionDomainService();
-            var resultado = gestionDomainService.PostGestionDomainService(ajuste);
-
-            // Assert
-            Assert.AreEqual("No se encontro el dia de visita", resultado);
-        }
-
         [TestMethod]
         public void PruebaParaValidarQueSeEncuentraUnFormaAtencioPost()
         {
@@ -275,7 +229,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -292,7 +245,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             formaAtencion = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -316,7 +269,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -333,7 +285,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             puntoPos = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -356,7 +308,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -373,7 +324,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             puntoRejas = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -397,7 +348,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -414,7 +364,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             ramo = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -437,7 +387,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -454,7 +403,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             segmentacion = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -478,7 +427,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -495,7 +443,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             segmento = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -518,7 +466,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -535,7 +482,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tamano = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -559,7 +506,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -576,7 +522,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             territorio = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -599,7 +545,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -616,7 +561,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoCliente = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -640,7 +585,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -657,7 +601,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoEmpresa = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -682,7 +626,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -699,7 +642,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoReferencia = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -722,7 +665,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -739,7 +681,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoZona = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -763,7 +705,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -780,7 +721,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             zonaEntrega = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -803,7 +744,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -820,7 +760,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             gestion = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega,gestion);
@@ -843,7 +783,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -860,7 +799,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             canal = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -884,7 +823,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -901,7 +839,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             caracteristicaZona = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -924,7 +862,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -941,7 +878,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             ciudad = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -965,7 +902,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -982,7 +918,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             compania = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1005,7 +941,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1022,7 +957,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             departamento = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1036,47 +971,6 @@ namespace UnitTestMatricula
             Assert.AreEqual("No se encontro el Departamento", resultado);
         }
 
-
-        [TestMethod]
-        public void PruebaParaValidarQueSeEncuentraUnaDiaVisitaPut()
-        {
-            // Arrange
-            var canal = new Canal();
-            var caracteristicaZona = new CaracteristicaZona();
-            var ciudad = new Ciudad();
-            var compania = new Compania();
-            var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
-            var formaAtencion = new FormaAtencion();
-            var puntoPos = new PuntoPos();
-            var puntoRejas = new PuntoRejas();
-            var ramo = new Ramo();
-            var segmentacion = new Segmentacion();
-            var segmento = new Segmento();
-            var tamano = new Tamano();
-            var territorio = new Territorio();
-            var tipoCliente = new TipoCliente();
-            var tipoEmpresa = new TipoEmpresa();
-            var tipoReferencia = new TipoReferencia();
-            var tipoZona = new TipoZona();
-            var zonaEntrega = new ZonaEntrega();
-            var gestion = new Gestion();
-            var id = new int();
-            diaVisita = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
-                      puntoPos, puntoRejas, ramo, segmentacion, segmento,
-                      tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
-                      tipoZona, zonaEntrega, gestion);
-
-            // Act
-
-            var gestionDomainService = new GestionDomainService();
-            var resultado = gestionDomainService.PutGestionDomainService(id,ajuste);
-
-            // Assert
-            Assert.AreEqual("No se encontro el dia de visita", resultado);
-        }
-
         [TestMethod]
         public void PruebaParaValidarQueSeEncuentraUnFormaAtencioPut()
         {
@@ -1086,7 +980,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1103,7 +996,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             formaAtencion = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1127,7 +1020,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1144,7 +1036,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             puntoPos = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1167,7 +1059,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1184,7 +1075,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             puntoRejas = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1208,7 +1099,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1225,7 +1115,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             ramo = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1248,7 +1138,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1265,7 +1154,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             segmentacion = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1289,7 +1178,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1306,7 +1194,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             segmento = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1329,7 +1217,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1346,7 +1233,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tamano = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1370,7 +1257,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1387,7 +1273,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             territorio = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1410,7 +1296,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1427,7 +1312,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoCliente = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1451,7 +1336,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1468,7 +1352,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoEmpresa = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1493,7 +1377,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1510,7 +1393,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoReferencia = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1533,7 +1416,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1550,7 +1432,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             tipoZona = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);
@@ -1574,7 +1456,6 @@ namespace UnitTestMatricula
             var ciudad = new Ciudad();
             var compania = new Compania();
             var departamento = new Departamento();
-            var diaVisita = new DiaVisita();
             var formaAtencion = new FormaAtencion();
             var puntoPos = new PuntoPos();
             var puntoRejas = new PuntoRejas();
@@ -1591,7 +1472,7 @@ namespace UnitTestMatricula
             var gestion = new Gestion();
             var id = new int();
             zonaEntrega = null;
-            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, diaVisita, formaAtencion,
+            var ajuste = new Ajuste(canal, caracteristicaZona, ciudad, compania, departamento, formaAtencion,
                       puntoPos, puntoRejas, ramo, segmentacion, segmento,
                       tamano, territorio, tipoCliente, tipoEmpresa, tipoReferencia,
                       tipoZona, zonaEntrega, gestion);

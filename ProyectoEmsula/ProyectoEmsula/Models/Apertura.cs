@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEmsula.Models
 {
-    public class Gestion
+    public class Apertura
     {
         public int Id { get; set; }
         public long NumeroIdentidad { get; set; }
@@ -67,9 +67,11 @@ namespace ProyectoEmsula.Models
         public ZonaEntrega ZonaEntrega{ get; set; }
         public string ordenLunes { get; set; }
         public string ordenMartes { get; set; }
-        public string ordenMiercoles{ get; set; }
-        public string ordenJueves{ get; set; }
-        public string ordenViernes{ get; set; }
-        public string ordenSabado{ get; set; }
+        public string ordenMiercoles { get; set; }
+        public string ordenJueves { get; set; }
+        public string ordenViernes { get; set; }
+        public string ordenSabado { get; set; }
+
+
     }
 }

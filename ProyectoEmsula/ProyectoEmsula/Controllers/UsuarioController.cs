@@ -41,14 +41,14 @@ namespace ProyectoEmsula.Controllers
         [HttpGet("{usuarioId}/{contrasenia}")]
         public async Task<ActionResult<Usuario>> GetUsuario(string usuarioId, string contrasenia)
         {
-            var response = await _usuarioAppService.TieneAccesoUsuario(usuarioId, contrasenia);
+                var response = await _usuarioAppService.TieneAccesoUsuario(usuarioId, contrasenia);
 
-            if (response != "success")
+            if (response == null)
             {
-                return BadRequest(response);
+                return BadRequest("notlogged");
                 
             }
-            return Ok("success");
+            return Ok(response);
         }
 
     }

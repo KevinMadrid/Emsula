@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProyectoEmsula.DomainService
 {
-    public class GestionDomainService
+    public class AperturaDomainService
     {
-        public string GetGestionDomainService(int id, Gestion gestion)
+        public string GetAperturaDomainService(int id, Apertura apertura)
         {
-            if (gestion == null)
+            if (apertura == null)
             {
-                return "No se Encuentra la Gestion";
+                return "No se Encuentra la Apertura";
             }
             return null;
         }
-         public string PostGestionDomainService(Ajuste ajuste)
+         public string PostAperturaDomainService(Ajuste ajuste)
          {
             if (ajuste.Canal == null)
              {
@@ -99,11 +99,11 @@ namespace ProyectoEmsula.DomainService
             }
             return null;
          }
-        public string PutGestionDomainService(int id,Ajuste ajuste)
+        public string PutAperturaDomainService(int id,Ajuste ajuste)
         {
-            if (ajuste.Gestion== null)
+            if (ajuste.Apertura== null)
             {
-                return "No se Encontro la Gestion";
+                return "No se Encontro la Apertura";
             }
             if (ajuste.Canal == null)
             {
@@ -127,7 +127,8 @@ namespace ProyectoEmsula.DomainService
             {
                 return "No se encontro el Departamento";
             }
-         
+        
+
             if (ajuste.FormaAtencion == null)
             {
                 return "La Forma de Atencion no existe";
@@ -186,11 +187,11 @@ namespace ProyectoEmsula.DomainService
             }
             return null;
         }
-        public string DeletetGestionDomainService(int id, Gestion gestion)
+        public string DeleteAperturaDomainService(int id, Apertura apertura)
         {
-            if (gestion == null)
+            if (apertura == null)
             {
-                return "No se encuentro la Gestion";
+                return "No se encuentro la Apertura";
             }
             return null;
 

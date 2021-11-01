@@ -27,25 +27,14 @@ namespace ProyectoEmsula.Controllers
 
             if (_baseDatos.Canals.Count() == 0)
             {
-                _baseDatos.Canals.Add(new Canal { CodigoCanal= "Afiliadas" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Agregadores" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Autoservicio" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Autoventa" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "CDI" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Depositos" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Distribuidores" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Fleteros" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Hogares" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Interno" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Mayoristas" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Mercados Especiales" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Obsequios" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "PostMix" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Preventa" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Rutas de Agua" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Sin Canal" });
+                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Preventa" });          
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Supermercados" });
-                _baseDatos.Canals.Add(new Canal { CodigoCanal = "Ventas Plantel" });
                 _baseDatos.Canals.Add(new Canal { CodigoCanal = "Wallmart" });
 
                 _baseDatos.SaveChanges();

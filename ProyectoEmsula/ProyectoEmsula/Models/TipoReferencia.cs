@@ -10,7 +10,7 @@ namespace ProyectoEmsula.Models
 
     {
         public int Id { get; set; }
-        public string Tiporeferencia { get; set; }
+        public string TipoReferenciaCliente { get; set; }
         public List<Gestion> gestions{ get; set; }
 
 
